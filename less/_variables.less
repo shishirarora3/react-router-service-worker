@@ -1,0 +1,591 @@
+// Variables.less
+// Variables to customize the look and feel of Bootstrap
+// -----------------------------------------------------
+
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@gray6:                 #666;
+@grayMedium:            #777;
+@grayLight:             #999;
+@graya:                 #aaa;
+@grayc:                 #ccc;
+@grayd:                 #ddd;
+@grayLighter:           #eee;
+@graye7:                #e7e7e7;
+@graye6:                #e6e6e6;
+@graye5:                #e5e5e5;
+@gray50:                #7F7F7F;
+@white:                 #fff;
+@whitefa:               #fafafa;
+@whitef7:               #f7f7f7;
+@whitef5:               #f5f5f5;
+@whitef3:               #f3f3f3;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@sprBlue:               #4dc2e6;
+@sprBlueDark:           #00aeef;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+@riverwood:             #3A83D2;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @graye5;
+@textColor:             @grayDark;
+@focusColor:            #5897fb;
+@pageHeaderBackground:  @white;
+@pageHeaderHeight:      48px;
+@pageHeaderShadow:      #fbfafa;
+@containerBackground:   @white;
+@containerBorder:       @concreteGray;
+@containerShadow:       rgba(191, 191, 191, 0.35);
+@sidebarBorder:         #bbb;
+@spamColor:             #c5a56f;
+@focusedBgColor:        #f6f9fc;
+@selectedBgColor:       #ffffcc;
+@inlineEditHoverColor:  #ffff99;
+
+//budget progress indicator
+@lightgreen:            #9AC84A;
+@lightyellow:           #F8E85C;
+@limitreach:            #C74926;
+@budgetprogressnormal:  #e1e1e1;
+
+
+// Links
+// -------------------------
+@linkColor:             @indigo; //#08c;
+@linkColorHover:        darken(@linkColor, 20%);
+@selBgLinkColor:        #afc8e8;
+@selBgLinkColorHover:   lighten(@selBgLinkColor, 15%);
+@selBgPaletteColor:     #ffd;
+
+
+// Typography
+// -------------------------
+@baseFontSize:          13px;
+@smallerFontSize:       12px;
+@subFontSize:           11px;
+@baseFontFamily:        "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+/*@baseFontFamily:        Calibri, Tahoma, Arial, sans-serif;*/
+
+@computedLineHeight:    20px;
+@baseLineHeight:        18px;
+@smallerLineHeight:     16px;
+@subLineHeight:         14px;
+@altFontFamily:         Georgia, "Times New Roman", Times, serif;
+
+@remuxFontsize:         10px;
+@remuxFallback:         true;
+
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    500;     // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+
+@baseBorderRadius:        4px;
+@border-radius-base:      4px;
+
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       #ddd; // table and cell border
+
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #ccc; //darken(@white, 20%);
+
+@btnPrimaryBackground:              @indigo;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+@btnSpamBackground:                 #C5A56F;
+@btnSpamBackgroundHighlight:        spin(@btnSpamBackground, 15%);
+
+@groupBtnMinWidth:					28px;
+
+// New Buttons
+// -------------------------
+@btn-default-color:                 @pepperGray;
+@btn-default-bg:                    @white;
+@btn-default-border:                @marbleGray;
+@btn-primary-color:                 @white;
+@btn-primary-bg:                    @indigo;
+@btn-primary-border:                @indigo;
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputDisabledBackground:       @grayLighter;
+@labelFontColor:                #666;
+
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:                @white;
+@dropdownBorder:                    rgba(0,0,0,.2);
+@dropdownDividerBackground:         @graye5;
+@dropdownFallbackBorder:            @grayc;
+@dropdownHeaderColor:               @grayLight;
+@dropdownLinkColor:                 @gray;
+@dropdownLinkActiveColor:           @white;
+@dropdownLinkActiveBackground:      #428bca;
+@dropdownLinkColorHover:            @basaltGray;
+@dropdownLinkDisabledColor:         @graniteGray;
+@dropdownLinkBackgroundHover:       @shaleGray;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@baseCaretWidth:          4px;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of componentz dependent on the z-axis
+// Try to avoid customizing these :)
+@zindexMinimum:             10;
+@zindexCell:                10;
+@zindexMedium:             100;
+@zindexDropdown:          1000;
+@zindexSidebar:           1005;
+@zindexModalBackdrop:     1010;
+@zindexContextualPane:    1020;
+@zindexQuickCompose:      1030;
+@zindexFullScreen:        1009;
+@zindexFixedNavbar:       1050;
+@zindexContextualDialog:  1055;
+@zindexModal:             1056;
+@zindexDialogInModal:     1057;
+@zindexStatusAlert:       1060;
+@zindexDropdown:          1060;
+@zindexChosen:            1060;
+@zindexSelect2:           1060;
+@zindexImageUploader:     1065;
+@zindexTooltip:           1080;
+@zindexPopover:           1080;
+@zindexColorPick:         1080;
+@zindexQuickTour:         1090;
+@zindexMaximum:           9999;
+
+// Images path
+// -------------------------
+@iconRefreshing:                        "/ui/neo/img/icon-refreshing.gif";
+@imageBackground:                       "/ui/neo/img/background.png";
+@spinner:                               "/ui/neo/img/spinner.gif";
+@iconNoDataEmptyBox:                    "/ui/neo/img/empty_box.png";
+@iconNoDataEmptyContent:                "/ui/neo/img/empty_widget.png";
+
+// Sprite icons path
+// -------------------------
+@smallIconSize: 16px;
+@iconGlyphSpritePath:                   "/ui/neo/img/glyphicons-halflings.png";
+@iconWhiteGlyphSpritePath:              "/ui/neo/img/glyphicons-halflings-white.png";
+@iconChosen:                            "/ui/neo/img/chosen-sprite.png";
+@iconSelect2:                           "/ui/neo/img/select2-sprite.png";
+@iconSelect2x2:                         "/ui/neo/img/select2x2-sprite.png";
+
+@iconSpritePath:                        "/ui/neo/img/icon-sprite.png";
+@iconSpriteHeight:                      @smallIconSize * 73;
+@iconSpriteWidth:                       @smallIconSize * 5;
+
+@iconLargeSpriteSize:                   24px;
+@iconLargeSpritePath:                   "/ui/neo/img/icon-large-sprite.png";
+@iconLargeSpriteHeight:                 48px;
+@iconLargeSpriteWidth:                  72px;
+
+@badgeIconSize:                         80px;
+@badgeIconSpritePath:                   "/ui/neo/img/badge-icons.png";
+@badgeIconSpriteHeight:                 @badgeIconSize * 12;
+@badgeIconSpriteWidth:                  @badgeIconSize * 2;
+
+@iconVizSpritePath:                     "/ui/neo/img/spr-visualization-icons.png";
+@iconVizSpriteHeight:                   @smallIconSize * 2;
+@iconVizSpriteWidth:                    @smallIconSize * 17;
+
+@iconSprSpritePath:                     "/ui/neo/img/spr-icons-sprite.png";
+@iconSprSpriteHeight:                   896px;
+@iconSprSpriteWidth:                    42px;
+
+@iconMiniSprSpritePath:                 "/ui/neo/img/spr-mini-icons-sprite.png";
+@iconMiniSprSpriteHeight:               252px;
+@iconMiniSprSpriteWidth:                600px;
+
+@iconSprChannelsSpritePath:             "/ui/neo/img/spr-icons-channels-sprite.png";
+@iconSprChannelsSpriteHeight:           576px;
+@iconSprChannelsSpriteWidth:            384px;
+
+@iconSprChannelColoredSpritePath:       "/ui/neo/img/spr-ch-colored-icons-sprite.png";
+@iconSprChannelColoredSpriteHeight:     192px;
+@iconSprChannelColoredSpriteWidth:      144px;
+
+@iconSprMiniChannelColoredIconSize:     14px;
+@iconSprMiniChannelColoredSpritePath:   "/ui/neo/img/spr-mini-ch-colored-icons-sprite.png";
+@iconSprMiniChannelColoredSpriteHeight: @iconSprMiniChannelColoredIconSize * 49;
+@iconSprMiniChannelColoredSpriteWidth:  @iconSprMiniChannelColoredIconSize;
+
+@iconSprMiniChannelGraySpritePath:      "/ui/neo/img/spr-mini-ch-gray-icons-sprite.png";
+@iconSprMiniChannelGraySpriteHeight:    588px;
+@iconSprMiniChannelGraySpriteWidth:     14px;
+
+@iconSprChannelGraySpritePath:          "/ui/neo/img/spr-ch-gray-icons-sprite.png";
+@iconSprChannelGraySpriteHeight:        216px;
+@iconSprChannelGraySpriteWidth:         144px;
+
+@iconSpriteReportingPath:               "/ui/neo/img/reporting-sprite.png";
+@iconSpriteReportingHeight:             616px;
+@iconSpriteReportingWidth:              336px;
+
+@iconSpriteIdeationPath:                "/ui/neo/img/ideation-sprite.png";
+@iconSpriteIdeationHeight:              1170px;
+@iconSpriteIdeationWidth:               780px;
+
+
+@iconSpriteIdeationSmallPath:           "/ui/neo/img/ideation-sprite-small.png";
+@iconSpriteIdeationSmallHeight:         495px;
+@iconSpriteIdeationSmallWidth:          330px;
+
+@iconSpriteIdeationWidgetCategoryPath:           "/ui/neo/img/ideation-widget-category-sprite.png";
+@iconSpriteIdeationWidgetCategoryHeight:         100px;
+@iconSpriteIdeationWidgetCategoryWidth:          150px;
+
+@iconDarkChannelIconSize:               18px;
+@iconDarkChannelSpritePath:             "/ui/neo/img/spr-dark-channels-sprite.png";
+@iconDarkChannelSpriteHeight:           @iconDarkChannelIconSize * 43;
+@iconDarkChannelSpriteWidth:            @iconDarkChannelIconSize;
+@iconWhiteChannelSpritePath:            "/ui/neo/img/spr-white-channels-sprite.png";
+
+@iconSprSidebarHinge:                   "/ui/neo/img/icon/sidebar-icon.png";
+@iconSprLogo:                           "/ui/neo/img/logo/sprinklr-logo-header.png";
+@iconSprLogoGray:                       "/ui/neo/img/logo/sprinklr-logo-gray.png";
+@iconSprLogoLarge:                      "/ui/neo/img/logo/sprinklr-logo-large.png";
+@iconWeightWatchersLogo:                "/ui/neo/img/logo/WW-logo-header.png";
+@iconPlayOverlay:                       "/ui/neo/img/icon/play-overlay.png";
+@iconPlayOverlayDisabled:               "/ui/neo/img/icon/play-overlay-disabled.png";
+@iconPlaySlide:                         "/ui/neo/img/icon/play-slide.png";
+@iconPlusOverlay:                       "/ui/neo/img/temp/plus-overlay.png";
+@iconAddColumn:                         "/ui/neo/img/icon/add-column.png";
+@iconAddColumnSmall:                    "/ui/neo/img/icon/add-column-small.png";
+@iconSprSpinner:                        "/ui/neo/img/spr-spinner.gif";
+@iconSprSpinnerSmall:                   "/ui/neo/img/spr-spinner-small.gif";
+@iconLoading:                           "/ui/neo/img/icon/loading.png";
+@iconSprTemplateVizSpritePath:          "/ui/neo/img/spr-template-sprite.png";
+@iconSprLSTTemplateVizSpritePath:       "/ui/neo/img/spr-lst-template-sprite.png";
+@iconSprBlueSpritePath:                 "/ui/neo/img/spr-blue-icons-sprite.png";
+@iconTagCollection:                     "/ui/neo/img/icon/tag-collection.png";
+@iconTagCollectionGray:                 "/ui/neo/img/icon/tag-collection-gray.png";
+@iconTagVideoIcon:                      "/ui/neo/img/icon/qp-video-icon.png";
+@iconTagPSDIcon:                        "/ui/neo/img/icon/qp-psd-icon.png";
+
+@iconSprBigSpritePath:                  "/ui/neo/img/spr-big-icons-sprite.png";
+@iconSprBigSpritePathHeight:            384px;
+@iconSprBigSpritePathWidth:             96px;
+
+@iconContentSpritePath:                 "/ui/neo/img/spr-content-sprite.png";
+@iconContentSpriteHeight:               1824px;
+@iconContentSpriteWidth:                96px;
+
+@iconWhiteChannelSpriteLargePath:        "/ui/neo/img/spr-white-channels-sprite-48x48.png";
+@iconWhiteChannelSpriteLargeIconSize:    48px;
+@iconWhiteChannelSpriteLargeHeight:      2064px;
+@iconWhiteChannelSpriteLargeWidth:       48px;
+
+@iconBoardSpritePath:                   "/ui/neo/img/sam/sam-board-icons.png";
+@iconBoardSpriteHeight:                 1870px;
+@iconBoardSpriteWidth:                  80px;
+
+@iconBoardMediumSpritePath:             "/ui/neo/img/sam/sam-board-icons-m.png";
+@iconBoardMediumSpriteHeight:           1320px;
+@iconBoardMediumSpriteWidth:            60px;
+
+@iconBoardSmallSpritePath:              "/ui/neo/img/sam/sam-board-icons-s.png";
+@iconBoardSmallSpriteHeight:            880px;
+@iconBoardSmallSpriteWidth:             40px;
+
+@iconFileTypeSpritePath:                "/ui/neo/img/monitoring/file-type-icons.png";
+@iconFileTypeSpriteHeight:              552px;
+@iconFileTypeSpriteWidth:               24px;
+
+@iconImageEditorSpritePath:             "/ui/neo/img/img-filter-icons-sprite.png";
+@iconImageEditorSpriteHeight:           444px;
+@iconImageEditorSpriteWidth:            222px;
+@iconImageEditorSpriteIcon:             74px;
+
+// Input placeholder text color
+// -------------------------
+@placeholderText:         @grayLight;
+
+
+// Hr border color
+// -------------------------
+@hrBorder:                @grayLighter;
+
+
+// Navbar
+// -------------------------
+@navbarHeight:                    32px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+
+@sprNavDropdownWidth:             350px;
+
+
+// Hero unit
+// -------------------------
+@heroUnitBackground:              @grayLighter;
+@heroUnitHeadingColor:            inherit;
+@heroUnitLeadColor:               inherit;
+
+
+// Form states and alerts
+// -------------------------
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #dd4b39;
+@errorBackground:         #f2dede;
+@errorBorder:             #da5a49;
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
+/***************************************** Stylings for updated bootstrap libraries (3.3.4) **********************************/
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in componentz like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+@font-size-base:        14px;
+@font-size-small:       @subFontSize;
+@font-family-base:      @baseFontFamily;
+
+//Tooltips
+// ------------------------
+
+@zindex-tooltip:         @zindexTooltip;
+@tooltip-opacity:        80;
+@tooltip-bg:             @black;
+@tooltip-arrow-width:    5px;
+@tooltip-max-width:      200px;
+@tooltip-color:          @white;
+@tooltip-arrow-color:    @tooltip-bg;
+
+// popovers
+// -------------------------
+@zindex-popover:                      @zindexPopover;
+//** Popover body background color
+@popover-bg:                          #fff;
+//** Popover maximum width
+@popover-max-width:                   276px;
+//** Popover border color
+@popover-border-color:                rgba(0,0,0,.2);
+//** Popover fallback border color
+@popover-fallback-border-color:       #ccc;
+
+//** Popover title background color
+@popover-title-bg:                    darken(@popover-bg, 3%);
+
+//** Popover arrow width
+@popover-arrow-width:                 7px;
+//** Popover arrow color
+@popover-arrow-color:                 @popover-bg;
+
+//** Popover outer arrow width
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+//** Popover outer arrow color
+@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
+//** Popover outer arrow fallback color
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:    6.382978723%;
+@fluidGridGutterWidth:    2.127659574%;
+
+// Stream Column
+// -------------------------
+@streamHeaderHeight:            28px;
+@streamDefaultColor:            @concreteGray;
+@streamWidth:                   370px;
+@streamHeaderWidth:             @streamWidth - 175;
+@streamHeaderHoverWidth:        @streamWidth - 312;
+@convStreamWidth:               (@streamWidth * 2) - 30;
+@convStreamHeaderWidth:         @convStreamWidth - 186;
+@userInfluenceColor:            @sprBlue;
+@userParticipationColor:        #f2bd1d;
+@userSpammerColor:              #f24130;
+@userSpammerBgColor:            #ef8669;
+@contextedBgColor:              lighten(@sprBlue, 35%);
+
+@sprSpinnerHeight:              63px;
+@sprSpinnerWidth:               144px;
+
+
+//Utility:
+@goldenRatio:                   1.62;
+@highlight-color:               #FFFFCC;
+
+//New theme colors
+
+//Primary Colors
+@indigo:            #4682ea;
+@river:             #4c98d8;
+@salmon:            #ed775a;
+@spring:            #53c182;
+@cantaloupe:        #f1b23c;
+
+//river(blue) shades
+@lake:              #70ade0;
+@oasis:             #96c2e6;
+@pond:              #b9d6ee;
+@sea:               #dcebf6;
+
+//salmon(red) shades
+@redFish:           #f0927b;
+@clown:             #f4ae9c;
+@jellyFish:         #f9ddd7;
+
+//spring(green) shades
+@autumn:            #76cd9b;
+@winters:           #98dab4;
+@summer:            #def2e6;
+
+@mintgreen:         #25bb9b;
+
+//cantaloupe(yellow) shades
+@muskMelon:         #f8c85b;
+@banana:            #fddf78;
+@mango:             #fcefdb;
+
+//supporting colors
+@leadGray:          #1a1a1a;
+@basaltGray:        #333;
+@slateGray:         #4d4d4d;
+@pencilGray:        #606060;
+@pepperGray:        #666;
+@mercuryGray:       #808080;
+@nickelGray:        #999;
+@graniteGray:       #b2b2b2;
+@concreteGray:      #ccc;
+@marbleGray:        #e6e6e6;
+@soapStoneGray:     #f2f2f2;
+@shaleGray:         #f5f5f5;
+@chalk:             #f8f8f8;
+@formFieldBg:       #f3f4f5;
+@whiteGray:         #fffffd;
+
+//outlines
+@grayBorder:        #EAEAE8;

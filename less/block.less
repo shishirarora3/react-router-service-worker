@@ -1,0 +1,17 @@
+.block-style(@background-color,@artifact-color, @artifact-font-color, @font-color:white,@line:true) {
+  width: 100%;
+  background-color: @background-color;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  header {
+    .section-style(@line:@line,@font-size:1.5em,@artifact-color: @artifact-color, @artifact-font-color: @artifact-font-color, @font-color:@font-color, @padding: 2.5em 3em 0);
+  }
+  .content {
+    .section-style(@line:false, @font-size:0.85em,@artifact-color: @artifact-color, @font-color:@font-color,@padding: 1em 3em);
+
+  }
+  .button-container {
+    .section-style(@line:false, @font-size:0.55em, @artifact-color: @artifact-color, @artifact-font-color: @artifact-font-color,@button-vertical-alligment:top,@padding:  3em 8em);
+  }
+}
