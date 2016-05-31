@@ -10,9 +10,8 @@
 
 <h3>Features</h3>
 <ul>
-  <li>Responsive</li>
-  <li>StateLess components</li>
-  <li>60fps and CSS-only slider with 0 reflows/repaints</li>
+  <li>React Table Component</li>
+  <li>Flexible enough to take any format of table data </li>
 </ul>
 <h3>Code Instructions</h3>
 <ul>
@@ -25,4 +24,4 @@
   <li>webpack
 </ul>
 
-<a href="http://rawgit.com/shishirarora3/landing-page/master/index.html" target="_blank">Demo</a>
+<a href="https://rawgit.com/shishirarora3/react-table/master/index.html" target="_blank">Demo</a>
